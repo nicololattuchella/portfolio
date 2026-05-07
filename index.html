@@ -4,46 +4,346 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nicolò Lattuchella | Portfolio</title>
+
+  <!-- CSS esterno -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
-  <h1>Nicolò Lattuchella</h1>
+  <div class="background-effects">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
 
-  <h2>Cybersecurity | Networking | Cloud | DevOps</h2>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">
+        <span>N</span>L
+      </a>
 
-  <p>
-    Sono Nicolò, diplomato in Cybersecurity presso ITS Academy Lazio Digital.
-    Ho esperienza in ambito DevOps con GitLab, Jenkins, Docker e pipeline CI/CD.
-    Attualmente sto approfondendo Networking e Cloud, con certificazione CCNA
-    e percorso di studio AWS.
-  </p>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Chi sono</a></li>
+        <li><a href="#skills">Competenze</a></li>
+        <li><a href="#experience">Esperienze</a></li>
+        <li><a href="#projects">Progetti</a></li>
+        <li><a href="#contact">Contatti</a></li>
+      </ul>
 
-  <h3>Competenze</h3>
-  <ul>
-    <li>Networking: CCNA, VLAN, routing, switching, OSPF, subnetting</li>
-    <li>DevOps: GitLab, Jenkins, Docker, CI/CD</li>
-    <li>Cloud: AWS Cloud Practitioner e Solutions Architect in studio</li>
-    <li>Cybersecurity: basi di sicurezza, hardening, monitoraggio</li>
-  </ul>
+      <a href="#contact" class="nav-button">Contattami</a>
+    </nav>
+  </header>
 
-  <h3>Esperienze</h3>
-  <ul>
-    <li>Tirocinio curriculare DevOps presso Exprivia S.p.A.</li>
-    <li>Tirocinio attuale orientato a Networking e Cloud</li>
-    <li>Docente Assistente per Reti e Sistemi presso ITS Academy Lazio Digital</li>
-  </ul>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Cybersecurity • Networking • Cloud • DevOps</p>
 
-  <h3>Progetti</h3>
-  <ul>
-    <li>Pipeline CI/CD con Jenkins, Docker e deploy su ambiente Kubernetes/k3d</li>
-    <li>Laboratori di networking con Cisco Packet Tracer</li>
-    <li>Supporto didattico per studenti ITS su reti, sistemi e certificazioni</li>
-  </ul>
+        <h1>
+          Ciao, sono <span>Nicolò</span><br>
+          costruisco soluzioni IT moderne.
+        </h1>
 
-  <h3>Contatti</h3>
-  <p>
-    LinkedIn: inserisci qui il tuo link<br />
-    GitHub: inserisci qui il tuo link<br />
-    Email: inserisci qui la tua email
-  </p>
+        <p class="hero-description">
+          Diplomato in Cybersecurity presso ITS Academy Lazio Digital, con esperienza
+          in DevOps, Networking e Cloud. Ho conseguito la certificazione CCNA e sto
+          ampliando il mio percorso verso AWS e il ruolo di Solutions Architect.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">
+            Guarda i progetti
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="#contact" class="btn secondary">
+            Contatti
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>CCNA</strong>
+            <span>Certificazione</span>
+          </div>
+
+          <div>
+            <strong>DevOps</strong>
+            <span>Jenkins / Docker</span>
+          </div>
+
+          <div>
+            <strong>AWS</strong>
+            <span>Cloud in studio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="profile-card">
+          <div class="profile-glow"></div>
+
+          <div class="avatar">
+            <span>NL</span>
+          </div>
+
+          <h2>Nicolò Lattuchella</h2>
+          <p>Junior IT Specialist</p>
+
+          <div class="profile-tags">
+            <span>Networking</span>
+            <span>Cloud</span>
+            <span>DevOps</span>
+            <span>Security</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-heading">
+        <p class="eyebrow">Info</p>
+        <h2>Chi sono</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card about-text">
+          <h3>Profilo professionale</h3>
+
+          <p>
+            Sono un profilo junior orientato al mondo IT, con basi solide in cybersecurity,
+            networking e automazione. Durante il mio percorso ho lavorato con strumenti
+            come GitLab, Jenkins, Docker e pipeline CI/CD, sviluppando un approccio pratico
+            al troubleshooting e al lavoro in team.
+          </p>
+
+          <p>
+            Attualmente mi sto specializzando su Networking e Cloud, con focus su AWS,
+            infrastrutture, progettazione di architetture e buone pratiche operative.
+          </p>
+        </div>
+
+        <div class="info-list">
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Location</strong>
+              <span>Roma, Italia</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fa-solid fa-certificate"></i>
+            <div>
+              <strong>Certificazione</strong>
+              <span>Cisco CCNA</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fa-solid fa-cloud"></i>
+            <div>
+              <strong>Focus attuale</strong>
+              <span>AWS Cloud & Solutions Architect</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div>
+              <strong>Ambiti</strong>
+              <span>Networking, DevOps, Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skillset</p>
+        <h2>Competenze principali</h2>
+      </div>
+
+      <div class="cards-grid">
+        <article class="skill-card">
+          <i class="fa-solid fa-network-wired"></i>
+          <h3>Networking</h3>
+          <p>VLAN, routing, switching, OSPF, subnetting, troubleshooting e Cisco Packet Tracer.</p>
+        </article>
+
+        <article class="skill-card">
+          <i class="fa-brands fa-docker"></i>
+          <h3>DevOps</h3>
+          <p>Pipeline CI/CD, Jenkins, GitLab, Docker, deploy automatizzati e gestione ambienti.</p>
+        </article>
+
+        <article class="skill-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Cybersecurity</h3>
+          <p>Basi di sicurezza, hardening, monitoraggio, analisi dei rischi e buone pratiche IT.</p>
+        </article>
+
+        <article class="skill-card">
+          <i class="fa-brands fa-aws"></i>
+          <h3>Cloud AWS</h3>
+          <p>Studio di Cloud Practitioner, Solutions Architect, servizi core e progettazione cloud.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="section-heading">
+        <p class="eyebrow">Percorso</p>
+        <h2>Esperienze</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="date">Attuale</p>
+            <h3>Tirocinio orientato a Networking e Cloud</h3>
+            <p>
+              Approfondimento di networking, infrastrutture e servizi cloud, con focus
+              su certificazioni AWS e crescita verso ruoli tecnici in ambito cloud.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="date">Esperienza recente</p>
+            <h3>Docente Assistente - Reti e Sistemi</h3>
+            <p>
+              Supporto al docente e agli studenti ITS durante attività didattiche,
+              laboratori, esercitazioni e orientamento su certificazioni e mondo del lavoro.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="date">Tirocinio curriculare</p>
+            <h3>DevOps Intern - Exprivia S.p.A.</h3>
+            <p>
+              Esperienza pratica su GitLab, Jenkins, Docker e pipeline CI/CD,
+              con attività legate ad automazione, build e deploy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="section-heading">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Progetti</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-code-branch"></i>
+            <span>DevOps</span>
+          </div>
+
+          <h3>Pipeline CI/CD</h3>
+          <p>
+            Pipeline con Jenkins, Docker e deploy su ambiente Kubernetes/k3d,
+            pensata per automatizzare build e rilascio applicativo.
+          </p>
+
+          <a href="#" class="project-link">
+            Scopri di più <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-router"></i>
+            <span>Networking</span>
+          </div>
+
+          <h3>Laboratori CCNA</h3>
+          <p>
+            Esercitazioni su VLAN, routing, OSPF, subnetting e troubleshooting
+            tramite Cisco Packet Tracer.
+          </p>
+
+          <a href="#" class="project-link">
+            Scopri di più <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Training</span>
+          </div>
+
+          <h3>Videogioco educativo IT</h3>
+          <p>
+            Concept di simulatore formativo per apprendere networking, sicurezza
+            e buone pratiche operative in un ambiente interattivo.
+          </p>
+
+          <a href="#" class="project-link">
+            Scopri di più <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="contact-card">
+        <p class="eyebrow">Contatti</p>
+
+        <h2>Costruiamo qualcosa insieme?</h2>
+
+        <p>
+          Sono aperto a opportunità junior in ambito Networking, Cloud, Cybersecurity e DevOps.
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:inserisci-la-tua-email@example.com" class="btn primary">
+            <i class="fa-solid fa-envelope"></i>
+            Email
+          </a>
+
+          <a href="https://www.linkedin.com/" target="_blank" class="btn secondary">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+          </a>
+
+          <a href="https://github.com/" target="_blank" class="btn secondary">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Nicolò Lattuchella. Portfolio personale.</p>
+  </footer>
 </body>
 </html>
